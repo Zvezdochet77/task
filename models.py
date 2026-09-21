@@ -45,4 +45,6 @@ class Order(Base):
 
     user = relationship("User")
     status = relationship("OrderStatus")
-    products = relationship("Product", secondary=order_items)
+    products = relationship("Product", secondary=order_items)\
+    
+    
