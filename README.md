@@ -89,8 +89,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Документация API будет доступна на http://127.0.0.1:8000/docs.
-
 ## Статус
 
 Модели и схемы описаны, эндпоинты в `main.py` пока не реализованы.

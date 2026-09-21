@@ -29,10 +29,19 @@ class OrderDetailResponse (BaseModel):
     items: list [OrderItemRead]
     total: float
 
+class OrderItemCreate (BaseModel):
+    product_id: int
+    quantity: int = Field (gt=0)
+    
 class OrderCreate (BaseModel):
     user_id: int
-    items: list [OrderItemRead]
+    items: list [OrderItemCreate]
+
+class OrderStatusUpdate (BaseModel):
+    status_id: id
     
+
+
 
 
     
